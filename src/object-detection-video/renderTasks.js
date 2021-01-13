@@ -29,7 +29,7 @@ const App = ({tasks,restart}) => {
 
 
 useEffect(() => {
-  console.log("girdi")
+  
  toggle()
 }, [tasks])
 

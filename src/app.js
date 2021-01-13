@@ -9,9 +9,7 @@ import './index.css'
 import { Button } from '@material-ui/core'
 
 const handlePrediction = (predictions) => {
-  console.timeEnd('detect')
-  console.time('detect')
-  console.log(predictions)
+ 
 }
 
 const render = (ctx, predictions) => {
