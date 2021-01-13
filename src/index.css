@@ -1,0 +1,53 @@
+.fillPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.Container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding:5% 20%;
+}
+center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.tasks{
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notVisible{
+  visibility: hidden;
+}
+
+
+.task_images{
+  width: 100px;
+  height: 100px;
+}
+.done{
+  width: 80px;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Inter', sans-serif;
+}
+
+.row{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

@@ -1,0 +1,193 @@
+
+
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.rotated {
+    transform: rotate(180deg); /* Equal to rotateZ(45deg) */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+
+  ul { list-style-type: none; }
+
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.deneme2{
+    font-size: 65px;
+    font-weight: 700;
+    color: #2b044d;
+    font-family: "Nunito",sans-serif;
+    line-height: 1.3;
+    margin-bottom: 32px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.slider-area .hero__caption {
+    position: relative;
+}
+.itemler{
+    padding-left: 20%;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+element.style {
+    animation-delay: 0.4s;
+}
+.slider-area .hero__caption span {
+    display: inline-block;
+    color: #2b044d;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.slider-area .hero__caption h1 {
+    font-size: 65px;
+    font-weight: 700;
+    color: #2b044d;
+    font-family: "Nunito",sans-serif;
+    line-height: 1.3;
+    margin-bottom: 32px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nunito",sans-serif !important;
+    color: #2b044d;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: normal;
+}
+.h1, h1 {
+    font-size: 2.5rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+element.style {
+    animation-delay: 0.8s;
+}
+.slider-area .hero__caption p {
+    margin-bottom: 54px;
+    padding-right: 155px;
+}
+
+p {
+    font-family: "Poppins",sans-serif;
+    color: #707b8e;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+.home1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.radius-btn {
+    padding: 20px 40px !important;
+   border-radius: 30px !important ; 
+}
+.btn {
+    background: #f9218d;
+    -moz-user-select: none;
+    text-transform: capitalize;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    padding: 30px 44px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
