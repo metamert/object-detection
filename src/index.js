@@ -13,7 +13,7 @@ import { store, persistor } from './redux/store';
 
 
 const Index = () => {
-  const [page, setpage] = useState(true)
+  const [page, setpage] = useState(false)
 return(  <Provider store={store}>
 
 {page? <App></App>:

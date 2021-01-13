@@ -81,6 +81,16 @@ const userReducer = (state = INITIAL_STATE, action) => {
         ...state,
         tasks: update(state.tasks,action.payload)
       };
+      case "restart":
+      return {
+        ...state,
+        tasks:  [
+          { name: 'Yes', done: false, index: 0, src: Yes },
+          { name: 'Good', done: false, index: 1, src: Good },
+          { name: 'Iloveyou', done: false, index: 2, src: Iloveyou },
+          { name: 'Hello', done: false, index: 3, src: Hello },
+        ]
+      };
     default:
       return state;
   }

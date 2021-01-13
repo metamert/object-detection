@@ -5,7 +5,7 @@ const getLabelText = (prediction) => {
 
 export const renderPredictions = (ctx, predictions,processTask) => {
  
-  console.log(predictions)
+ 
   // Font options.
   const font = `${16}px 'ibm-plex-sans', Helvetica Neue, Arial, sans-serif`
   ctx.setFont(font)
