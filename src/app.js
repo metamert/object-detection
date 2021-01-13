@@ -44,7 +44,7 @@ const App = () => {
   return (
     <div className="Container">
       <h2>To prove that you are not a robot, make the hand signals </h2>
-    
+      <RenderTask></RenderTask>
         <ObjectDetectionVideo
         
           model={model}
@@ -59,7 +59,7 @@ const App = () => {
           // mirrored:   mirror the video about its vertical axis.
           mirrored
         />
-        <RenderTask></RenderTask>
+   
       
       
     </div>
