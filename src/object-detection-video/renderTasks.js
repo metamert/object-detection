@@ -59,12 +59,12 @@ useEffect(() => {
   
 
   return (
-    <div className="Container">
+    <div className="Container2">
      
       {!check() ? (
         <div className="column">
           <h1> Done ! You are not a robot</h1>
-          <img src={done} style={{ width: 300 }}></img>
+          <img src={done} style={{ width: 60 }}></img>
           <Button color="primary" variant="contained" onClick={()=>restart()}>
             Restart
           </Button>

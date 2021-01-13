@@ -115,7 +115,7 @@ const ObjectDetectionVideo = React.memo(
 
 
     return (
-      <div style={{ position: 'relative' }}>
+      <div style={{ position: 'relative',padding:"0% 5%" }}>
         <video autoPlay playsInline muted ref={videoRef} />
         <canvas ref={canvasRef} />
       </div>

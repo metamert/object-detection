@@ -12,8 +12,18 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding:5% 20%;
+  padding:1% 10%;
 }
+.Container2{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding:1% 2%;
+}
+
+
 center{
   display: flex;
   flex-direction: column;
@@ -34,11 +44,11 @@ center{
 
 
 .task_images{
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 .done{
-  width: 80px;
+  width: 50px;
 }
 
 h1,h2,h3,h4,h5{
@@ -46,7 +56,7 @@ h1,h2,h3,h4,h5{
 }
 
 .row{
-  margin-top: 30px;
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
