@@ -54,6 +54,7 @@ const ObjectDetectionVideo = React.memo(
 
       // Update predictions to match canvas.
       const offsetPredictions = predictions.map((prediction) => {
+       
         let x = prediction.bbox[0] * scale + xOffset
         const y = prediction.bbox[1] * scale + yOffset
         const width = prediction.bbox[2] * scale
