@@ -8,7 +8,7 @@ import {up} from "../redux/user/user.actions"
 
 
 const ObjectDetectionVideo = React.memo(
-  ({ model, onPrediction, fit, mirrored, render,update }) => {
+  ({ model, onPrediction, fit, mirrored, render,update,tasks }) => {
    
     const videoRef = useRef()
     const canvasRef = useRef()
@@ -97,14 +97,14 @@ const ObjectDetectionVideo = React.memo(
     }
 
 
-
+ 
     function processTask(prediction) {
       if (prediction.score > 0.8) {
        
   
           let label = prediction.label
 
-          update(label)
+         update(label)
   
          
   
@@ -127,6 +127,8 @@ const ObjectDetectionVideo = React.memo(
 const d=(dispatch)=>({
   update:(name)=>dispatch(up(name))
 })
+
+
 
 
 export default connect(null,d)(ObjectDetectionVideo)
