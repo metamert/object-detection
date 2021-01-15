@@ -4,9 +4,6 @@ import Good from '../../lottie/ok.png'
 import Hello from '../../lottie/hi.png'
 import Yes from '../../lottie/Yes.jpg'
 
-
-
-
 function shuffle(array) {
   var currentIndex = array.length,
     temporaryValue,
@@ -26,14 +23,14 @@ function shuffle(array) {
 
   return array
 }
-const rand=(tasks)=>{
+const rand = (tasks) => {
   let random = Math.floor(3 * Math.random())
- return tasks.filter((task) => {
+  return tasks.filter((task) => {
     return task.index !== random
   })
 }
 
-const generateState=()=>{
+const generateState = () => {
   let tasks = [
     { name: 'Yes', done: false, index: 0, src: Yes },
     { name: 'Good', done: false, index: 1, src: Good },
@@ -41,59 +38,56 @@ const generateState=()=>{
     { name: 'Hello', done: false, index: 3, src: Hello },
   ]
 
- 
+  let newtasks = rand(tasks)
 
-  let newtasks =  rand(tasks)
-
-console.log(newtasks)
+  console.log(newtasks)
 
   let lasttasks = shuffle(newtasks)
   console.log(lasttasks)
   return lasttasks
-
 }
-
 
 const INITIAL_STATE = {
-  tasks : generateState()
-};
-
-const update=(state,name)=>{
-let newTasks=[...state]
-
-newTasks.map(task=>{
-if(task.name==name){
-  task.done=true
+  tasks: generateState(),
 }
 
+const update = (state, name) => {
+  let newTasks = [...state]
+  let same = true
+  newTasks.map((task) => {
+    if (task.name == name && !task.done) {
+      task.done = true
+      same = false
+    }
+  })
 
-})
-
-return newTasks
-
-
+  if (same) {
+    return state
+  } else {
+    return newTasks
+  }
 }
 
 const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case "setTick":
+    case 'setTick':
       return {
         ...state,
-        tasks: update(state.tasks,action.payload)
-      };
-      case "restart":
+        tasks: update(state.tasks, action.payload),
+      }
+    case 'restart':
       return {
         ...state,
-        tasks:  [
+        tasks: [
           { name: 'Yes', done: false, index: 0, src: Yes },
           { name: 'Good', done: false, index: 1, src: Good },
           { name: 'Iloveyou', done: false, index: 2, src: Iloveyou },
           { name: 'Hello', done: false, index: 3, src: Hello },
-        ]
-      };
+        ],
+      }
     default:
-      return state;
+      return state
   }
-};
+}
 
-export default userReducer;
+export default userReducer
