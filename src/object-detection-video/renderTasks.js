@@ -5,7 +5,7 @@ import done from '../lottie/done.webp'
 import url from "../mp3/correct.mp3"
 import { Button } from '@material-ui/core'
 import {connect } from "react-redux"
-import {restart} from "../redux/user/user.actions"
+import {restart} from "../redux/task/task.actions"
 
 const App = ({tasks,restart}) => {
  
