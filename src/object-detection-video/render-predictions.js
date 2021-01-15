@@ -18,7 +18,7 @@ export const renderPredictions = (ctx, predictions,processTask) => {
 
   predictions.forEach((prediction) => {
 
-    console.log("ssd 973 dataset 18k step predictions => ",predictions)
+    console.log("ssd 973 image 18k step predictions => ",predictions)
 
     processTask(prediction)
     const x = prediction.bbox[0]
