@@ -1,9 +1,9 @@
 {
-  "name": "object-detection-react",
+  "name": "i-am-not-a-robot",
   "version": "1.0.0",
-  "description": "Real-time custom object detection with TensorFlow.js",
+  "description": "i am not a robot -introduction to image processing",
   "keywords": [],
-  "repository": "https://github.com/cloud-annotations/object-detection-react",
+ 
   "license": "MIT",
   "main": "src/index.js",
   "dependencies": {
