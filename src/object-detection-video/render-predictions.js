@@ -5,7 +5,7 @@ const getLabelText = (prediction) => {
 
 export const renderPredictions = (ctx, predictions,processTask) => {
  
- 
+  console.log("rcnn 973 images 18k step predictions=>",predictions)
   // Font options.
   const font = `${16}px 'ibm-plex-sans', Helvetica Neue, Arial, sans-serif`
   ctx.setFont(font)
@@ -18,7 +18,6 @@ export const renderPredictions = (ctx, predictions,processTask) => {
 
   predictions.forEach((prediction) => {
 
-  
 
     processTask(prediction)
     const x = prediction.bbox[0]
