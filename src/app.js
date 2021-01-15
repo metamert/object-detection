@@ -43,7 +43,7 @@ const App = () => {
  
   return (
     <div className="Container">
-      <h2>To prove that you are not a robot, make the hand signs </h2>
+      <h2>To prove that you are not a robot, make the hand signs (May be delayed for 3-4 seconds) </h2>
       <RenderTask></RenderTask>
         <ObjectDetectionVideo
         
