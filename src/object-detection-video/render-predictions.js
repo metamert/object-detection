@@ -17,6 +17,9 @@ export const renderPredictions = (ctx, predictions,processTask) => {
   const textHeight = parseInt(font, 10) // base 10
 
   predictions.forEach((prediction) => {
+
+    console.log("ssd 973 dataset 18k step predictions => ",predictions)
+
     processTask(prediction)
     const x = prediction.bbox[0]
     const y = prediction.bbox[1]
